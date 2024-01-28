@@ -1,0 +1,101 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: ListView(
+
+            children: <Widget>[
+              Container(
+                width: 200,
+                height: 100,
+                color: Colors.blue[100],
+                child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        width: 25,
+                        height: 25,
+                        color: Colors.white,
+                        child: Center(child: Text('1')),
+                      ),
+                    ),
+                    Center(child: Text('Text 1')),
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                width: 200,
+                height: 100,
+                color: Colors.blue[200],
+                child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        width: 25,
+                        height: 25,
+                        color: Colors.white,
+                        child: Center(child: Text('2')),
+                      ),
+                    ),
+                    Center(child: Text('Text 2')),
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                width: 200,
+                height: 100,
+                color: Colors.blue[300],
+                child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        width: 25,
+                        height: 25,
+                        color: Colors.white,
+                        child: Center(child: Text('3')),
+                      ),
+                    ),
+                    Center(child: Text('Text 3')),
+                  ],
+                ),
+              ),
+              SizedBox(height: 10),
+              Container(
+                width: 200,
+                height: 100,
+                color: Colors.blue[400],
+                child: Stack(
+                  children: <Widget>[
+                    Align(
+                      alignment: Alignment.bottomRight,
+                      child: Container(
+                        width: 25,
+                        height: 25,
+                        color: Colors.white,
+                        child: Center(child: Text('4')),
+                      ),
+                    ),
+                    Center(child: Text('Text 4')),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
